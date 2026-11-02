@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MotionLab</title>
+    <meta
+      name="description"
+      content="MotionLab — JavaScript Styles & Animations, a beginner-friendly experiment showcasing interactive DOM and animation demos."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Web Technology Lab</p>
+          <h1>MotionLab</h1>
+        </div>
+        <div class="lab-tag">Experiment 06 | JavaScript Styles & Animations</div>
+      </header>
+
+      <main class="dashboard">
+        <article class="demo-card clock-card">
+          <div class="card-header">
+            <span class="card-badge">Demo 1</span>
+            <h2>Digital Clock</h2>
+          </div>
+          <div class="clock-display" id="digitalClock">00:00:00</div>
+        </article>
+
+        <article class="demo-card color-card">
+          <div class="card-header">
+            <span class="card-badge">Demo 2</span>
+            <h2>Dynamic Background Colors</h2>
+          </div>
+          <div class="color-panel" id="bgColorPanel">
+            <span class="panel-label">Current color</span>
+            <strong id="bgColorValue">#1A1A2E</strong>
+          </div>
+          <div class="button-row">
+            <button id="randomColorBtn" type="button">Random Color</button>
+            <button id="toggleColorBtn" type="button">Start Auto Change</button>
+          </div>
+        </article>
+
+        <article class="demo-card zoom-card">
+          <div class="card-header">
+            <span class="card-badge">Demo 3</span>
+            <h2>Text Zoom</h2>
+          </div>
+          <p id="zoomText" class="zoom-text">
+            Hover me to make this text grow and feel lively with a smooth transition.
+          </p>
+        </article>
+
+        <article class="demo-card car-card">
+          <div class="card-header">
+            <span class="card-badge">Demo 4</span>
+            <h2>Car Animation</h2>
+          </div>
+          <div class="car-track" id="carTrack" aria-label="car animation track">
+            <div class="car" id="car" aria-label="moving car">🚗</div>
+          </div>
+          <div class="button-row compact-row">
+            <button id="startCarBtn" type="button">Start</button>
+            <button id="stopCarBtn" type="button">Stop</button>
+            <button id="resetCarBtn" type="button">Reset</button>
+          </div>
+        </article>
+
+        <article class="demo-card student-card">
+          <div class="card-header">
+            <span class="card-badge">Demo 5</span>
+            <h2>Student Profiles</h2>
+          </div>
+          <ul id="studentList" class="student-list"></ul>
+        </article>
+
+        <article class="demo-card style-card">
+          <div class="card-header">
+            <span class="card-badge">Demo 6</span>
+            <h2>Style Switcher</h2>
+          </div>
+          <h3 id="styleHeading">Hello, Learner!</h3>
+          <p id="welcomeMessage">Welcome to MotionLab. Explore the power of JavaScript styling.</p>
+          <div class="button-row compact-row">
+            <button id="headingColorBtn" type="button">Heading Color</button>
+            <button id="headingSizeBtn" type="button">Font Size</button>
+            <button id="messageBgBtn" type="button">Background</button>
+          </div>
+          <div class="button-row compact-row">
+            <button id="showMessageBtn" type="button">Show</button>
+            <button id="hideMessageBtn" type="button">Hide</button>
+          </div>
+        </article>
+
+        <article class="demo-card fade-card">
+          <div class="card-header">
+            <span class="card-badge">Demo 7</span>
+            <h2>Fade Animation</h2>
+          </div>
+          <div class="fade-box" id="fadeBox"></div>
+          <div class="button-row compact-row">
+            <button id="fadeOutBtn" type="button">Fade Out</button>
+            <button id="fadeInBtn" type="button">Fade In</button>
+          </div>
+        </article>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
